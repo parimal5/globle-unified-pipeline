@@ -28,7 +28,9 @@ jobs:
           node-version: ${{ inputs.node-version }}
       
       - name: Run ESLint
-        run: npm run lint
+        run: | 
+          echo "Running Linting"
+          npm run lint
 
       - name: Run tests
         run: npm test
