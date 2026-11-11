@@ -26,6 +26,10 @@ jobs:
         uses: parimal5/globle-unified-pipeline/actions/setup-node-project@main
         with:
           node-version: ${{ inputs.node-version }}
+      
+      - name: Run ESLint
+        run: npm run lint
 
       - name: Run tests
         run: npm test
+      
