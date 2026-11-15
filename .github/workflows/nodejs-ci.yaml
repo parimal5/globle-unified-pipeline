@@ -1,5 +1,5 @@
 
-name: Node.js CI
+name: CICD
 
 on:
   workflow_call:
